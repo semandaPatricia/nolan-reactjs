@@ -1,0 +1,23 @@
+#root {
+ 
+  margin: 0 ;
+  padding: 0;
+ 
+}
+.cut-out{
+  width: 900px;
+  min-height: 600px;
+  background-image: url("https://images.pexels.com/photos/18256614/pexels-photo-18256614/free-photo-of-young-woman-holding-a-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  margin: auto;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    91% 31%,
+    92% 70%,
+    70% 100%,
+    30% 100%,
+    7% 68%,
+    8% 30%
+  );
+}
