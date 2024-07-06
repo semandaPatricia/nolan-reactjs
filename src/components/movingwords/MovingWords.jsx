@@ -4,7 +4,7 @@ const MovingWords = () => {
   return (
     <div class="marquee">
   <div class="track">
-    <div class="content">&nbsp;Nolan Nolan Nolan Nolan Nolan Nolan Nolan Nolan Nolan Nolan Nolan Nolan Nolan </div>
+    <div class="content"style={{color:'#fff'}} >&nbsp;Organic Crave Organic Crave Organic Crave Organic Crave Organic Crave Organic Crave Organic Crave </div>
   </div>
 </div>
   )

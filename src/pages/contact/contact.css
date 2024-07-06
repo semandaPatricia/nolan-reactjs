@@ -1,0 +1,119 @@
+:root {
+  --border-color: #1b0e0e;
+  --btn-depth: 0.9rem;
+  --btn-hover-depth: 1.25rem;
+  --border-width: 0.23rem;
+  --bg-width: 1.5rem; /* width of the segments in the repeating bg */
+}
+
+/* Generic page container to center stuff */
+.container {
+  min-height: 100svh;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+/* The fancy button begins - this is our <a> tag */
+.fancy-btn {
+  --btn-upper-depth: var(--btn-depth);
+
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--border-color);
+  margin-top: var(--btn-depth);
+
+  /* Hover / focus should make the "over" section float up higher */
+  &:hover,
+  &:focus {
+    --btn-upper-depth: var(--btn-hover-depth);
+  }
+
+  /* Container helps decouple the layout of the
+      title, subtitle and icon from the <a> size. */
+  .over-container {
+    display: flex;
+    position: relative;
+    z-index: 10;
+
+    background-color: white;
+
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 9999vw;
+    padding: 0.5rem;
+    padding-left: 2rem;
+
+    translate: calc(var(--btn-upper-depth) * -1)
+      calc(var(--btn-upper-depth) * -1);
+    transition: translate 1s;
+
+    /* Grid shenanigans to lay things out how I wanted... */
+    /* You can ignore basically everything in the .over styles. */
+    .over {
+      margin-left: auto;
+
+      display: grid;
+      gap: 0 1rem;
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+      grid-auto-rows: auto;
+
+      text-align: right;
+
+      .title {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-style: italic;
+      }
+      .subtitle {
+        grid-row-start: 2;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        font-style: italic;
+        font-size: 0.35em;
+        padding-bottom: 0.35em;
+      }
+      .icon {
+        grid-column-start: 2;
+        grid-row: span 2 / span 2;
+
+        border: var(--border-width) solid var(--border-color);
+
+        border-radius: 9999vw;
+
+        overflow: hidden;
+
+        .icon-img {
+          aspect-ratio: 1;
+          height: 100%;
+          width: auto;
+          min-width: 2rem;
+          background: rgb(212, 18, 18);
+        }
+      }
+    }
+  }
+
+  /* This could be a ::after, but having an element might be useful for 
+       prototyping solutions to the "not connecting" issue. */
+  .under {
+    position: absolute;
+    inset: 0;
+
+    background-color: #ff0; /* color of the shadow */
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent var(--bg-width),
+      var(--border-color) var(--bg-width),
+      var(--border-color) calc(var(--bg-width) + var(--border-width))
+    );
+
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 9999vw;
+  }
+}

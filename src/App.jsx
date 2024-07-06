@@ -6,7 +6,7 @@ import './App.css'
 import About from './pages/about';
 import Home from './pages/Home/index'
 import Contact from './pages/contact/index'
-import Services from './pages/services/index'
+import Products from './pages/products/index'
 function App() {
   
 
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Products/>} />
 
         </Routes>
         

@@ -4,20 +4,30 @@
   padding: 0;
  
 }
-.cut-out{
-  width: 900px;
-  min-height: 600px;
-  background-image: url("https://images.pexels.com/photos/18256614/pexels-photo-18256614/free-photo-of-young-woman-holding-a-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-repeat: no-repeat;
-  margin: auto;
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    91% 31%,
-    92% 70%,
-    70% 100%,
-    30% 100%,
-    7% 68%,
-    8% 30%
-  );
+
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+:root {
+	--bg: #062fe8;
+	--nav: hsl(0 0% 100%);
+	--color: hsl(0 0% 10%);
+}
+
+:root.dark {
+	--bg: hsl(0 0% 0%);
+	--nav: hsl(0 0% 14%);
+	--color: hsl(0 0% 90%);
+}
+
+body {
+	place-items: center;
+	min-height: 100vh;
+	font-family:  "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
+	background: var(--bg);
+	color: var(--color);
 }

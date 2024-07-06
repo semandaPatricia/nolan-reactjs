@@ -7,9 +7,9 @@
 }
 
 :root {
-	--bg: hsl(0 0% 90%);
+	--bg: #062fe8;
 	--nav: hsl(0 0% 100%);
-	--color: hsl(0 0% 30%);
+	--color: hsl(0 0% 10%);
 }
 
 :root.dark {
@@ -254,9 +254,7 @@ nav a:is(:hover, :focus-visible) {
 :where(.x-link, .bear-link):is(:hover, :focus-visible) {
 	opacity: 1;
 }
-.bear-link svg {
-	width: 75%;
-}
+
 .x-link svg {
 	width: 50%;
 }

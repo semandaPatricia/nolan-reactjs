@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-white lg:grid lg:grid-cols-5">
+    <footer className=" lg:grid lg:grid-cols-5 border-t" style={{backgroundColor:'#062fe8'}}>
     <div className="relative block h-32 lg:col-span-2 lg:h-full">
       <img
-        src="https://images.pexels.com/photos/10220128/pexels-photo-10220128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src="https://images.unsplash.com/photo-1621057621209-baf1644dc82c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -15,14 +15,14 @@ const Footer = () => {
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
         <div>
           <p>
-            <span className="text-xs uppercase tracking-wide text-gray-500"> Call us </span>
+            <span className="text-xs uppercase tracking-wide font-semibold "style={{color:'#ff0'}} > Call us </span>
   
-            <a href="#" className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
+            <a href="#" className="block text-2xl font-medium  hover:opacity-75 sm:text-3xl" >
               0123456789
             </a>
           </p>
   
-          <ul className="mt-8 space-y-1 text-sm text-gray-700">
+          <ul className="mt-8 space-y-1 text-sm ">
             <li>Monday to Friday: 10am - 5pm</li>
             <li>Weekend: 10am - 3pm</li>
           </ul>
@@ -33,7 +33,7 @@ const Footer = () => {
                 href="#"
                 rel="noreferrer"
                 target="_blank"
-                className="text-gray-700 transition hover:opacity-75"
+                className=" transition hover:opacity-75"
               >
                 <span className="sr-only">Facebook</span>
   
@@ -52,7 +52,7 @@ const Footer = () => {
                 href="#"
                 rel="noreferrer"
                 target="_blank"
-                className="text-gray-700 transition hover:opacity-75"
+                className="transition hover:opacity-75"
               >
                 <span className="sr-only">Instagram</span>
   
@@ -71,7 +71,7 @@ const Footer = () => {
                 href="#"
                 rel="noreferrer"
                 target="_blank"
-                className="text-gray-700 transition hover:opacity-75"
+                className=" transition hover:opacity-75"
               >
                 <span className="sr-only">Twitter</span>
   
@@ -88,7 +88,7 @@ const Footer = () => {
                 href="#"
                 rel="noreferrer"
                 target="_blank"
-                className="text-gray-700 transition hover:opacity-75"
+                className=" transition hover:opacity-75"
               >
                 <span className="sr-only">GitHub</span>
   
@@ -108,45 +108,43 @@ const Footer = () => {
   
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <p className="font-medium text-gray-900">Services</p>
+            <p className=" font-semibold"style={{color:'#ff0'}} >Services</p>
   
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+                <a href="#" className=" transition hover:opacity-75">  Coaching </a>
               </li>
   
               <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> Company Review </a>
+                <a href="#" className=" transition hover:opacity-75"> Company Review </a>
+              </li>
+  
+             
+  
+              <li>
+                <a href="#" className=" transition hover:opacity-75"> HR Consulting </a>
               </li>
   
               <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
-              </li>
-  
-              <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
-              </li>
-  
-              <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+                <a href="#" className=" transition hover:opacity-75"> SEO Optimisation </a>
               </li>
             </ul>
           </div>
   
           <div>
-            <p className="font-medium text-gray-900">Company</p>
+            <p className="font-semibold "style={{color:'#ff0'}} >Company</p>
   
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> About </a>
+                <a href="#" className=" transition hover:opacity-75"> About </a>
               </li>
   
               <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+                <a href="#" className=" transition hover:opacity-75"> Meet the Team </a>
               </li>
   
               <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                <a href="#" className=" transition hover:opacity-75"> Accounts Review </a>
               </li>
             </ul>
           </div>
@@ -157,20 +155,20 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <ul className="flex flex-wrap gap-4 text-xs">
             <li>
-              <a href="#" className="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
+              <a href="#" className=" transition hover:opacity-75"> Terms & Conditions </a>
             </li>
   
             <li>
-              <a href="#" className="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
+              <a href="#" className=" transition hover:opacity-75"> Privacy Policy </a>
             </li>
   
             <li>
-              <a href="#" className="text-gray-500 transition hover:opacity-75"> Cookies </a>
+              <a href="#" className=" transition hover:opacity-75"> Cookies </a>
             </li>
           </ul>
   
-          <p className="mt-8 text-xs text-gray-500 sm:mt-0">
-            &copy; 2024. Nolan. All rights reserved.
+          <p className="mt-8 text-xs  sm:mt-0">
+            &copy; 2024. Crave. All rights reserved.
           </p>
         </div>
       </div>
